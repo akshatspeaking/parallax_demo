@@ -1,0 +1,22 @@
+.grid-birth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.9);
+}
+.grid-one-month {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.9);
+}
+.grid-last {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.9);
+}
+
+@media screen and (max-width:768px) {
+    .grid-birth, .grid-one-month, .grid-last {
+        grid-template-columns: 1fr;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+    }
+}

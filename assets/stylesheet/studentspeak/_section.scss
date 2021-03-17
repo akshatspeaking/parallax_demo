@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-twitter{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(15, 10, 36);
+    // background-color: #21396A;
+    border: 1px solid rgba(128, 128, 128, 0.741);
+    box-shadow: 0 10px 25px rgba(0,0,0,.7);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+.container:hover {
+    box-shadow:  0 0 15px rgba(161, 163, 162, 0.521);
+    // box-shadow: 0 0 10px #30BA67, 0 0 40px #30BA67, 0 0 80px #30BA67;
+    transform: scale(1.01, 1.01);
+}
+// , 0 0 20px rgba(161, 163, 162, 0.521), 0 0 40px rgba(161, 163, 162, 0.521);
+
+.section-background {
+   
+    padding: 15px 0;
+}
+.student-image{
+    padding: 1rem;
+    width: 30%;
+   }
+.student-image img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 2.5px solid #56BB67;
+
+    object-fit: cover;
+}
+
+.student-text{
+
+    h4 {
+        color: white;
+        letter-spacing: .1rem;
+        word-spacing: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    p {
+        color: grey;
+        letter-spacing: .05rem;
+        line-height: 1.5;
+    }
+    padding:1.5rem 1rem;
+    color: white;
+    width: 70%;
+    text-align: left;
+    align-content: center;
+}
+// .student-text p {
+//     margin-top: 1.5rem;
+// }
+
+.blog{
+    background-color: rgba(15, 10, 36, 0.651);
+    /* border: 1px solid rgba(128, 128, 128, 0.541); */
+    box-shadow: 0 10px 25px rgba(0,0,0,.7);
+    overflow: hidden;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 2rem;
+    transition: .5s;
+}
+.blog:hover{
+    transform: scale(1.1);
+}
+.blog-image img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2.5px solid #56BB67;
+    text-align: center;
+    margin: 1rem auto;
+}
+.blog-image{
+    text-align: center;
+}
+
+.blog-text{
+    padding: 1rem 2rem;
+    text-align: left;
+    color: gray;
+    font-size: 1.5rem;
+}
+.blog-text h4{
+    // padding: 1rem;
+    margin:  1rem auto;
+    color: white;
+    text-transform: uppercase;
+}
+.blog-text a {
+    text-align: left;
+    color: gray;
+    font-size: 1.2rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    // padding: 1rem;
+    /* padding-top: 2rem !important; */
+}
+.blog-text a:hover{
+    color: #255784;
+    /* background: #30BA67; */
+    /* box-shadow: 0 0 10px #30BA67, 0 0 40px #30BA67, 0 0 80px rgba(48, 186, 103, 0.644); */
+    box-shadow: 0 12px 80px rgba(0,0,0,1);
+}
+.blog-section{
+    margin-bottom: 6rem;
+}
+
+.gandu {
+    margin-top: -6rem;
+}
+
+
+.primary {
+    margin-top: 15rem;
+    padding-top: 5rem;
+}
+.primary-wrapper{
+    padding: 2rem;
+}
+.margin-top{
+    margin-top: 8rem;
+}
+hr{
+    border: 1px dotted gray;
+    width: 50%;
+    margin: 0 auto;
+}
+.twitter{
+    background-color: rgb(15, 10, 36);
+    margin: 4rem;
+    padding: 4rem 0;
+}
+
+
+.twitter-text {
+    text-align: center;
+    padding: 4rem;
+    color: #30ba67;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+
+.student-text h4 ,
+.student-text h5{
+    padding:  .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    // margin-bottom: 1rem;
+}
+.student-text h5{
+    padding-bottom: .5rem;  
+    font-size: 1.5rem;
+} 
+.student-text p{
+    padding: .5rem;
+}
+ 
+@media all and (max-width: 768px) {
+
+    html {
+        font-size: 12px;
+    }
+ .container,
+ .container-twitter {
+     width: 100% !important;
+ }
+ .twitter{
+     margin: 0 !important;
+ } 
+  /* .section-background{
+     width: 100vh;!
+ }  */
+ .flex {
+    flex-direction: column !important;
+ }
+ .student-image{
+     width: 100% !important;
+    text-align: center !important;
+ }
+ .student-image img{
+     width: 10rem !important;
+     height: 10rem !important;
+ }
+ .student-text{
+     width: 100% !important;
+ }
+ .twitter{
+     margin-top: 5px !important;
+ }
+ .twitter-text{
+     font-size: 1rem !important;
+     margin: 0 !important;
+ }
+ .blog{
+     margin-left: 0;
+     margin-bottom: 2rem;
+ }
+}
+
+
+@media all and (min-width:800px) and (max-width:1024px){
+
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 1024px !important;
+    }
+    .section-background {
+        width: 100% !important;
+    }
+    .blog{
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+}

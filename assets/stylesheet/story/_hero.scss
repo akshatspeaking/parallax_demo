@@ -1,0 +1,247 @@
+
+// Hero Section
+
+html {
+   font-size: 16px;
+}
+
+body {
+   margin: 0;
+}
+.main-container {
+   width: 100%;
+   height: 200vh;
+}
+
+.sub-container {
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   position: sticky;
+   top: 0;
+}
+
+.bg-container {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   background: url("/assets/media/story/hero/hero-bg-new.jpg");
+   background-position: 50% 85%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   animation: bgscale 4s;
+   animation-fill-mode: forwards; 
+   transition: all 0.5s ease-in ease-out;}
+
+
+.trees-container {
+   width: 100%;
+   height: 150vh;
+   position: absolute;
+   z-index: 1;
+   background: url("/assets/media/story/hero/trees-hero.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 15%;
+   animation: treescale 4s ease-in-out;
+   animation-fill-mode: forwards;
+   transition: all 0.5s ease-in ease-out;}
+
+.overlay-hero {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: 4;
+   background-color: #0c0c0c;
+   opacity: 0.2;
+   transition: all 0.5s ease-in ease-out;
+}
+
+svg {
+   width: 20%;
+}
+
+.intro-text {
+   color: rgba(255, 255, 255, 0.952);
+   font-weight: 700;
+   font-size: 5rem;
+   margin-bottom: 2rem;
+   animation: story 3s;
+   animation-delay: s;
+   font-family: 'Dancing Script', cursive;
+   transition: all 0.5s ease-in ease-out;
+   text-shadow: 2px 1px 10px black;
+}
+
+@keyframes story {
+   0% {
+      margin-bottom: -5rem;
+      opacity: 0;
+   }
+   20% {
+      margin-bottom: -5rem;
+      opacity: 0;
+
+   }
+   30% {
+      margin-bottom: -5rem;
+      opacity: 0;
+
+   }
+   40% {
+      margin-bottom: -4rem;
+      opacity: 0.1;
+
+   }
+   50% {
+      margin-bottom: -3rem;
+      opacity: 0.2;
+
+   }
+   60% {
+      margin-bottom: -2rem;
+      opacity: 0.3;
+
+   }
+   70% {
+      margin-bottom: -1rem;
+      opacity: 0.4;
+
+   }
+   80% {
+      opacity: 0.6;
+      margin-bottom: 0rem;
+
+
+   }
+   90% {
+      opacity: 0.8;
+      margin-bottom: 1rem;
+
+   }
+   100% {
+      opacity: 1;
+      margin-bottom: 2rem;
+
+   }
+}
+
+.intro-container {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: 3;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s ease-in ease-out;}
+
+.plot-container {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   z-index: 7;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex;
+   justify-content: flex-end;
+   margin-top: 15rem;
+   color: rgb(238, 238, 238);
+   text-align: center;
+   transition: all 0.5s ease-in ease-out;
+
+   h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+   }
+   p {
+      font-size: 1.2rem;
+      width: 60%;
+      margin: 0 auto;
+      color: rgb(114, 114, 114);
+   }
+}
+
+@keyframes treescale {
+   40% {
+       transform: scale(1,1);
+   }
+   80% {
+       transform: scale(1.5, 1.5);
+   }
+   100% {
+       transform: scale(1.5, 1.5);
+   }
+}
+@keyframes bgscale {
+   40% {
+       transform: scale(1,1);
+   }
+   85% {
+       transform: scale(1.2, 1.2);
+   }
+   100% {
+       transform: scale(1.2, 1.2);
+   }
+}
+
+@media screen and (max-width: 800px) {
+
+   html {
+      font-size: 12px;
+   }
+
+   .trees-container {
+      display: none;
+   }
+   .bg-container {
+      // background-position: top !important;
+      // background-size: 100% !important;
+      // background-position: center;
+      background-size: cover;
+   }
+   .main-container {
+      height: 100vh;
+   }
+
+   .plot-container {
+      margin-top: -10rem;
+      font-size: 2rem;
+      padding: 0 0.7rem;
+
+      h1 {
+         font-size: 3rem;
+         font-weight: 700;
+         text-transform: uppercase;
+         padding-bottom: 0.3rem;
+      }
+
+      p{
+         color: rgb(238, 238, 238);
+      }
+   }
+
+   .intro-container {
+      margin-top: -15rem;
+   }
+
+   .intro-text {
+      font-size: 5rem;
+   }
+   svg {
+      width: 60%;
+   }
+
+   .overlay-hero {
+      opacity: 0.3;
+   }
+
+   
+}

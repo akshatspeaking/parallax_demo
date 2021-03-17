@@ -1,0 +1,152 @@
+.mentors {
+  padding-top: 5rem;
+  .mentor {
+      padding-bottom: 5rem;
+  }
+  .main-container {
+      // background-color: aqua;
+      position: relative;
+  }
+}
+
+.mentors {
+
+
+  .clip {
+      clip-path: polygon(0 0, 100% 40%, 100% 60%, 0% 100%);
+      height: 18.75rem;
+      background-color:rgb(41, 33, 75);
+  }
+  .flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .info {
+      position: absolute;
+      width: 100%;
+  }
+  .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      position: absolute;
+      top: 12%;
+      right: 0;
+      left: 0;
+  }
+}
+.img {
+  img {
+   height: 15rem;
+   width: 15rem;
+   border-radius: 50%;
+   border: 2px solid $green;
+  }
+}
+
+.sub-container {
+    width: 65%;
+}
+.text {
+  text-transform: capitalize;
+  color: #e0d0d0;
+  h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+  }
+  h2,h3 {
+      font-size: 1.25rem;
+  }
+  a{
+      font-size: 1.5rem;
+  }
+
+
+}
+strong {
+  font-weight: 600;
+}
+.even-row {
+  .clip {
+      clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%) !important ;
+      background-color: rgb(60, 47, 119);
+  }
+  .flex {
+      flex-direction: row-reverse;
+  }
+
+
+}
+
+@media screen and (max-width:800px) {
+  .mentors {
+
+
+      
+      .mentor {
+          padding: 0;
+      }
+      .flex{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+
+      }
+      .clip {
+          display: none;
+          clip-path: none;
+      }
+  }
+  .even-row {
+      .clip {
+          clip-path: none !important;
+      }
+  }
+  .container,
+  .info {
+      position: static !important;
+  } 
+  .img {
+      img {
+          height: 9rem;
+          width: 9rem;
+      }
+  }
+  .info {
+      padding: 4rem 1.5rem 3rem 1.5rem !important;
+      text-align: left !important;
+      .text {
+          padding: 1.5rem 0;
+      }
+  }
+  .text {
+      text-transform: capitalize;
+      h1 {
+          font-size: 1.8rem;
+          font-weight: 600;
+      }
+      h2,h3 {
+          font-size: 0.9rem;
+      }
+  }
+  strong {
+      font-weight: 600;
+  }
+  .even-row {
+      background-color: rgb(60, 47, 119);
+  }
+  .odd-row {
+      background-color: rgb(41, 33, 75);
+  }             
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+  .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+  .mentors {
+      padding-top: 10rem;
+  }
+}

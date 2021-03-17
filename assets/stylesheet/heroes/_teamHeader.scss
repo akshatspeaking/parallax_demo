@@ -1,0 +1,119 @@
+.header {
+    padding: 4rem 0;
+    background-color: #0c0c0c;
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $crimson;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $green;
+    }
+    
+}
+.heading{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    padding: .5rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 1rem 20rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.63);
+    overflow: hidden;
+}
+.heading span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,#0c002b, #30BA67);
+    animation: animate1 3s linear infinite;
+}
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.heading span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(to bottom,#0c002b, #1779ff);
+    animation: animate2 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+.heading span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to left,#0c002b, #30BA67);
+    animation: animate3 3s linear infinite;
+}
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.heading span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(to top,#0c002b, #1779ff);
+    animation: animate4 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+@media screen and (max-width:800px) {
+.heading {
+    //  display: block;
+     padding: 1rem 3rem !important;
+     top: 3.5rem;
+    }
+.header {
+    padding: 1rem 0 !important;
+}
+}
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .header {
+        
+        .heading {
+            position: absolute !important;
+            top: 7% !important;
+        }
+    }
+} 
